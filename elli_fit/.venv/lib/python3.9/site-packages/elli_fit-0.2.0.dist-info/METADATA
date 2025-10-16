@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: elli_fit
+Version: 0.2.0
+Summary: Lightweight ellipse fitting library (NumPy-only)
+Author: Adrian Utge Le Gall
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: numpy
+Provides-Extra: plotting
+Requires-Dist: matplotlib; extra == "plotting"
