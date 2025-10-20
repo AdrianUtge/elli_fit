@@ -1,0 +1,5 @@
+- [ ] ajouter un systeme de queue folder avec un folder img et un txt exit 
+- [ ] sur la feature d'avant ajouter un systeme de multithreading
+- [X] ajouter des tests robustes
+- [~] faire une doc clean
+- [ ] ajuster a l'aide des ombres
