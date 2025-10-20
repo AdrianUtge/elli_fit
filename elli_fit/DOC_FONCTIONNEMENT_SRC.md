@@ -115,5 +115,13 @@ Adrian Utge Le Gall, 2025
 - **RANSAC** : sélection robuste en présence de bruit ou d’outliers.
 - **Optimisation non linéaire** : raffinement local des paramètres pour minimiser l’erreur géométrique réelle.
 
----
 
+
+
+python3 case_shadow_triptych.py \
+  "test_data/Capture Oct 20 2025.png" \
+  --mm-per-px 0.045 \
+  --refine \
+  --ransac-iters 1500 \
+  --save-dir out_triptych_debug \
+  --debug-candidates
