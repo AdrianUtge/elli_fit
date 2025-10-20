@@ -1,0 +1,22 @@
+Contexte d'analyse d'ombres projetées pour GPT-5:
+
+Dans notre système d'analyse, il est crucial de comprendre que nous travaillons avec des ombres projetées d'objets physiques. Voici les points clés à considérer :
+
+1. Nature des blobs :
+   - Chaque image contient 2 blobs
+   - Ces 2 blobs représentent l'ombre d'un MÊME objet physique
+   - L'ombre est projetée sur un écran situé à une distance d de la caméra
+
+2. Procédure d'ajustement :
+   - Pour chaque image, on ajuste une courbe séparément sur chaque blob
+   - Comme les 2 blobs sont l'ombre du même objet, on fait la moyenne des ajustements
+   - Cette moyenne pour une image k est appelée A_k
+
+3. Analyse multi-images (k=3) :
+   - Nous travaillons avec 3 images (k=3)
+   - Chaque image donne 2 blobs, soit 6 blobs au total
+   - On calcule A_k pour chaque image (moyenne des 2 blobs)
+   - La moyenne finale des trois A_k nous donne le diamètre total
+   - C'est sur ce diamètre total qu'on effectue l'ajustement final de la courbe
+
+Cette approche prend en compte la nature physique du système (ombres projetées d'un même objet) et utilise la redondance des mesures (6 blobs au total) pour améliorer la précision de l'ajustement final.
