@@ -149,8 +149,3 @@ print(f"  Angle (deg)     = {np.rad2deg(params[4]):.2f}°")
 
 
 
-python3 /case_two_shadow_average.py  \
-  --panels 3 --refine --save-dir out_case \
-  --min-area 60 --alpha-dark 2.2 --thr-widen 0.22 \
-  # ces 3 lignes exploitent les nouveaux filtres
-  --border-margin 8 --max-bbox-frac 0.70 --min-roundness 0.45
